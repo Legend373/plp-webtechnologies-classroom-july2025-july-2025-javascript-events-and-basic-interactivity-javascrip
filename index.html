@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Interactive Webpage 🎮</h1>
+      <button id="theme-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <!-- Dropdown Menu -->
+    <nav>
+      <div class="dropdown">
+        <button class="drop-btn">Menu ⬇</button>
+        <div class="dropdown-content">
+          <a href="#counter">Counter</a>
+          <a href="#faq">FAQ</a>
+          <a href="#tabs">Tabs</a>
+          <a href="#form">Form</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Counter Game -->
+    <section id="counter" class="card">
+      <h2>Counter Game</h2>
+      <p id="count">0</p>
+      <button id="increment-btn">➕ Increment</button>
+      <button id="reset-btn">🔄 Reset</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="card">
+      <h2>FAQ Section</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is JavaScript?</button>
+        <div class="faq-answer">
+          JavaScript is a programming language used to create dynamic websites.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is Event Handling?</button>
+        <div class="faq-answer">
+          It’s the process of listening to user actions and responding
+          accordingly.
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What is DOM Manipulation?</button>
+        <div class="faq-answer">
+          It's changing HTML/CSS elements dynamically using JavaScript.
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section id="tabs" class="card">
+      <h2>Tabbed Interface</h2>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="tab1">HTML</button>
+        <button class="tab-btn" data-tab="tab2">CSS</button>
+        <button class="tab-btn" data-tab="tab3">JavaScript</button>
+      </div>
+      <div class="tab-content" id="tab1">HTML structures the webpage.</div>
+      <div class="tab-content hidden" id="tab2">
+        CSS styles the webpage beautifully.
+      </div>
+      <div class="tab-content hidden" id="tab3">
+        JavaScript makes the webpage interactive.
+      </div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section id="form" class="card">
+      <h2>Registration Form</h2>
+      <form id="registration-form" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter a password"
+            required
+          />
+          <small class="error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Confirm your password"
+            required
+          />
+          <small class="error"></small>
+        </div>
+
+        <button type="submit">Register</button>
+        <p id="form-success" class="success-msg"></p>
+      </form>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
