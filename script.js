@@ -1,4 +1,4 @@
-// 🌙 Light/Dark Mode Toggle
+//  Light/Dark Mode Toggle
 const themeToggleBtn = document.getElementById("theme-toggle");
 themeToggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
@@ -7,7 +7,7 @@ themeToggleBtn.addEventListener("click", () => {
         : "🌙 Dark Mode";
 });
 
-// 🔢 Counter Game
+// Counter Game
 const countDisplay = document.getElementById("count");
 const incrementBtn = document.getElementById("increment-btn");
 const resetBtn = document.getElementById("reset-btn");
@@ -23,7 +23,7 @@ resetBtn.addEventListener("click", () => {
     countDisplay.textContent = count;
 });
 
-// ❓ FAQ Collapsible Section
+//  FAQ Collapsible Section
 const faqButtons = document.querySelectorAll(".faq-question");
 faqButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -32,7 +32,7 @@ faqButtons.forEach((btn) => {
     });
 });
 
-// 🗂 Tabs Functionality
+//  Tabs Functionality
 const tabButtons = document.querySelectorAll(".tab-btn");
 const tabContents = document.querySelectorAll(".tab-content");
 
@@ -46,7 +46,7 @@ tabButtons.forEach((button) => {
     });
 });
 
-// 📝 Form Validation
+//  Form Validation
 const form = document.getElementById("registration-form");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
